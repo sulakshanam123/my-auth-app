@@ -6,6 +6,7 @@ import { TranslateHttpLoader } from '@ngx-translate/http-loader';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { EmployeeService } from './services/employee.service';
 
 
 // Personal Access Token: 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
@@ -39,7 +40,7 @@ export function createTranslateLoader(httpClient: HttpClient): TranslateHttpLoad
     HttpClientModule
   ],
   providers:  [
-
+    EmployeeService
   ],
   bootstrap: [AppComponent]
 })

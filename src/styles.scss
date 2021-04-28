@@ -1,1 +1,22 @@
 /* You can add global styles to this file, and also import other style files */
+@import './google-fonts.scss';
+
+h1 {
+  font-family: 'LatoThin';
+}
+
+p {
+  font-family: 'LatoRegular';
+}
+
+div {
+  font-family: 'LatoLight';
+}
+
+span {
+  font-family: 'LatoThin';
+}
+
+pre {
+  font-family: 'LatoBlack';
+}
