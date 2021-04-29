@@ -23,7 +23,11 @@
     "@ngx-translate/http-loader": "^6.0.0",
     "rxjs": "~6.6.0",
     "tslib": "^2.0.0",
-    "zone.js": "~0.11.3"
+    "zone.js": "~0.11.3",
+    "@symplr-ux/alloy-components": "0.0.174-disabled-inconsistency-fix.1",
+    "@symplr-ux/alloy-icons": "0.0.9",
+    "@symplr-ux/alloy-ng": "0.0.25",
+    "@symplr-ux/alloy-theme": "0.0.33"
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.1102.8",

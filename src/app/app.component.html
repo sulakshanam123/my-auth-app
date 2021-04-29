@@ -1,10 +1,13 @@
-<section class="heading">
+<section class="heading" >
   <!-- {{'welcomeMessage' | translate:user}}
   <mark><label translate='login.username'></label></mark>
   <p translate [translateParams]="{ firstName: user.firstName }">welcomeMessage</p> -->
 
   <h1 class="heading-title">{{ 'appName' | translate }}</h1>
+  <!-- <sympl-primary-button size="lg" text="my Button" (click)="giveAlert()"></sympl-primary-button> -->
+  <!-- <sympl-primary-button (click)="abc()" type="button" size="lg" text="MyButton" disabled="false"></sympl-primary-button> -->
 
+  <sympl-secondary-button (click)="abc()" type="button" size="lg" text="MyButton" disabled="false"></sympl-secondary-button>
   <!-- For fonts examples -->
   <!-- <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A inventore ea reprehenderit eveniet reiciendis facilis quasi eligendi praesentium dicta, ab asperiores quaerat harum atque aut nulla minima voluptate rerum in.</p>
   <div>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A inventore ea reprehenderit eveniet reiciendis facilis quasi eligendi praesentium dicta, ab asperiores quaerat harum atque aut nulla minima voluptate rerum in.</div>
@@ -12,7 +15,16 @@
   <pre>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A inventore ea reprehenderit eveniet reiciendis facilis quasi eligendi praesentium dicta, ab asperiores quaerat harum atque aut nulla minima voluptate rerum in.</pre>
    -->
 </section>
-<div class="content">
+
+<div>
+  <sympl-dialog #modalDialogContent [header]="myHeader"
+  [acceptLabel]="acceptLabel" [rejectLabel]="noText">
+      <div slot="content">Lorem ipsum, dolor sit amet consectetur adipisicing elit. A inventore ea reprehenderit eveniet</div>
+  </sympl-dialog>
+</div>
+
+<!-- <sympl-modal #myRef></sympl-modal> -->
+<!-- <div class="content">
   <div class="container">
     <div class="item headings add-row">Add/Remove</div>
     <div class="item headings sr-no">Serial Number</div>
@@ -31,4 +43,4 @@
       <div contenteditable class="item data-cell">{{task.comment}}</div>
     </ng-container>
   </div>
-</div>
+</div> -->
